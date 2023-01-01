@@ -2,7 +2,7 @@ package calcfx.java;
 
 import java.util.Stack;
 
-public class Expression {
+public class Evaluator {
     public static Number evaluate(String expr) {
         Stack<Double> values = new Stack<>();
         Stack<Character> operators = new Stack<>();

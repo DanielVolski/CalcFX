@@ -24,6 +24,6 @@ public class NumpadBtn {
 
     public void onClickEquals(ActionEvent event) {
         if (!expression.getText().isEmpty())
-            expression.setText(Expression.evaluate(expression.getText()).toString());
+            expression.setText(Evaluator.evaluate(expression.getText()).toString());
     }
 }
