@@ -17,13 +17,18 @@ public class NumpadBtn {
     }
 
     public void onClickDelHandler(ActionEvent event) {
-        if (!expression.getText().isEmpty()) {
+        if (!expression.getText().isEmpty())
             expression.setText(expression.getText().substring(0, expression.getText().length() - 1));
-        }
     }
 
     public void onClickEquals(ActionEvent event) {
         if (!expression.getText().isEmpty())
-            expression.setText(Evaluator.evaluate(expression.getText()).toString());
+        {
+            String teste = Evaluator.evaluate(expression.getText()).toString();
+            if (teste.charAt(teste.length() - 1) == '0' && teste.charAt(teste.length() - 2) == '.') {
+                teste = teste.substring(0, teste.length() - 2);
+            }
+            expression.setText(teste);
+        }
     }
 }

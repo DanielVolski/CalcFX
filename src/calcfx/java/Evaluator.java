@@ -3,7 +3,7 @@ package calcfx.java;
 import java.util.Stack;
 
 public class Evaluator {
-    public static Number evaluate(String expr) {
+    public static Double evaluate(String expr) {
         Stack<Double> values = new Stack<>();
         Stack<Character> operators = new Stack<>();
 
@@ -58,7 +58,7 @@ public class Evaluator {
         return true;
     }
 
-    private static double applyOp(char operator, double n1, double n2)
+    private static double applyOp(char operator, double n2, double n1)
     {
         switch (operator)
         {
