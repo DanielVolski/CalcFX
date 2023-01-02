@@ -8,9 +8,9 @@
             "type": "java",
             "name": "Launch App",
             "request": "launch",
-            "mainClass": "calcfx.App",
-            "projectName": "calculator_5424b6b",
-            "vmArgs": "--module-path \"G:/Programming Languages/Java19/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib\" --add-modules javafx.controls,javafx.fxml"
+            "mainClass": "calcfx.java.App",
+            "projectName": "CalcFX_373e0e4b",
+            "vmArgs": "--module-path \"G:/Programming Languages/Java19/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib\" --add-modules javafx.controls,javafx.fxml",
         }
     ]
 }
